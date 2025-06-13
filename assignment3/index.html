@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GithubFinder</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>GithubFinder</h1>
+    </header>
+    <main>
+      <section class="search-section">
+        <p class="title">Search GitHub Users</p>
+        <p class="description">
+          Enter a username to fetch a user profile and reops
+        </p>
+        <form id="search-form">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Enter GitHub username"
+            required
+          />
+      </section>
+      <section id="profile-section">
+        <div id="profile-info"></div>
+      </section>
+        <section id="repo-section">
+            <p class="title">Latest Repositories</p>
+            <ul id="latest-repos"></ul>
+        </section>
+    </main>
+    <footer>
+      <p>&copy; Github Finder</p>
+    </footer>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
